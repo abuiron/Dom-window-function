@@ -1,0 +1,55 @@
+body{
+    background-color: gray;
+}
+.d2{
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    color: green;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+.d3{
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    color: green;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.clr{
+    color: white;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+.cnt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    color: yellowgreen;
+    margin: 20px;
+    padding: 10px;
+    width: auto;
+}
+#countdown{
+    border: 2px gray solid;
+    width: 350px;
+    height: auto;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+    margin: 10px;
+    text-align: center;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.st{
+
+    margin: 10px;
+    margin-bottom: 20px;
+}
