@@ -54,12 +54,55 @@
     
         <!--widow history checking-->
 
-        <div class="hst">
+    <div class="setdat">
             <h1 class="d2">window history</h1>
+            <h2>set data in local & session</h2>
+            <h3 id="sd" class="lsd"></h3>
+            <h3 id="sd" class="ssd"></h3>
 
         <button class="btn btn-success st" onclick="setData()">set data</button>
+
+    </div>
+    <div class="getdat">
+        <h2>get data from local & session</h2>
+        <h3 id="lgd" class="dh">lgd not asaign</h3>
+        <h3 id="sgd" class="dh">ssd not assign</h3>
+    <button class="btn btn-info st" onclick="getData()">get Data</button>
+    </div>
+    
+    <div class="rmdat">
+        <h2>remove from local & session</h2>
+    <button class="btn btn-info st" onclick="removeData()">remove Data</button>
+    </div>
+    
+    <div class="clrdat">
+        <h2>clr data from local & session</h2>
+    <button class="btn btn-info st" onclick="clearData()">clear Data</button>
+    </div>
+
+
+    <!--window console-->
+
+    <div class="wc">
+        <h1 class="d3">Window console</h1>
+        <div class="wcbtns">
+        <button class="btn btn-danger" onclick="werror()">give an error</button>
+        <button class="btn btn-warning" onclick="wwarning()">give a warning</button>
+        <button class="btn btn-primary" onclick="walert()">give an alert</button>
+        <button class="btn btn-success" onclick="wprompt()">prompt </button>
+        <button class="btn btn-info" onclick="wconfirm()">confirm </button>
+        <button class="btn btn-danger" onclick="wclear()">clear </button>
+        </div>
+    </div>
+
+    <!--set Timeout()-->
+    <div class="st">
+        <h1 class="d3">Set Timeout()</h1>
+        <div class="stbtns">
+            <button class="btn btn-primary" onclick="wopen()">Open </button>
         </div>
 
+    </div>
  
     <script src="script.js"></script>
 </body>

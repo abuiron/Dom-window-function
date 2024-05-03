@@ -102,8 +102,85 @@ function resetTimer()
 
 
 //windos history
+// storing in local and session storage
 
+// session storage will delete after you close the tab
+// local storage will not delet untill you delete
 function setData(){
     localStorage.setItem("name","abu")
-    sessionStorage.setItem("name","iron")
+    sessionStorage.setItem("name","abu")
+}
+
+//get the data of local& session
+function getData(){
+    let lgd=localStorage.getItem("name");
+    let sgd=sessionStorage.getItem("name")
+
+    let ld = document.getElementById("lgd");
+    ld.innerText=`lgd data ${lgd}`;
+    
+    let sd = document.getElementById("sgd");
+    sd.innerText=`sgd data ${sgd}`;
+
+}
+
+//remove the local & session
+function removeData(){
+    localStorage.removeItem("name");
+    sessionStorage.removeItem("name");
+}
+
+//clear the local & session  remove and clear both are same 
+function clearData(){
+    localStorage.removeItem("name");
+    sessionStorage.removeItem("name");
+    let ld = document.getElementById("lgd");
+    ld.innerText='';
+    
+    let sd = document.getElementById("sgd");
+    sd.innerText='';
+
+}
+
+
+//window console
+
+//this give a error to the console
+function werror(){
+    window.console.error("you have an error");
+}
+
+//this give the warning to the console
+function wwarning(){
+    window.console.warn("this is the warning")
+}
+
+//this is give the alert
+function walert(){
+    window.alert("thi is the alert");
+}
+
+//this is show he prompt you need
+function wprompt(){
+    window.prompt("Enter your name");
+}
+
+//this is for confirm message
+function wconfirm(){
+    window.confirm("are you sure about that");
+}
+
+//this is for clear the console
+function wclear(){
+    window.console.clear()
+}
+
+//setTimeout()
+
+function wopen(){
+    let win = window.open("class.html")
+
+    setTimeout(()=>{
+        win.close()
+    },2000)
 }
