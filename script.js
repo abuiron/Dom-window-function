@@ -185,3 +185,6 @@ function wopen(){
         win.close()
     },2000)//the window will close in  2 seconds
 }
+
+let hist=window.history
+console.log(hist)
