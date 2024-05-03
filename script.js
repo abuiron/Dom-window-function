@@ -176,11 +176,12 @@ function wclear(){
 }
 
 //setTimeout()
-
+//seTimeout function is used for calling one time with 
+//exact time 
 function wopen(){
     let win = window.open("class.html")
 
     setTimeout(()=>{
         win.close()
-    },2000)
+    },2000)//the window will close in  2 seconds
 }
